@@ -88,9 +88,8 @@ export default {
       config.module.rules.push({
         test: /\.(ogg|mp3|wav|mpe?g)$/i,
         loader: "file-loader",
-        exclude: "~/assets/music.ogg"
         options: {
-          fix: "true"
+          name: "/assets/music.ogg"
         }
       });
     }
