@@ -86,10 +86,11 @@ export default {
      */
     extend(config, ctx) {
       config.module.rules.push({
-        test: /\.(ogg|mp3|wav|mpeg)$/,
+        test: /\.(ogg|mp3|wav|mpe?g)$/i,
         loader: "file-loader",
+        exclude: "~/assets/music.ogg"
         options: {
-          name: "~/assets/music.ogg"
+          fix: "true"
         }
       });
     }
