@@ -89,7 +89,7 @@ export default {
         test: /\.(ogg|mp3|wav|mpe?g)$/i,
         loader: "file-loader",
         options: {
-          name: "~/assets/music.wav"
+          name: "~/assets/music.ogg"
         }
       });
     }
